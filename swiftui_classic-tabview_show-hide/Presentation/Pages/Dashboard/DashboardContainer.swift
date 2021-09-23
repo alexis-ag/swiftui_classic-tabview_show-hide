@@ -2,6 +2,7 @@ import SwiftUI
 
 struct DashboardContainer: View {
     let  props: Props
+    @Environment(\.tabBarHeight) private var tabBarHeight
 
     var body: some View {
         NavigationView {

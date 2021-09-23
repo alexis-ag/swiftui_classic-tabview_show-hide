@@ -1,40 +1,40 @@
 import SwiftUI
 
 struct RootContainer: View {
-    @State private var selectedNavBarTab: BottomNavTab = .dashboard {
-        willSet {
-            if newValue != selectedNavBarTab {
-                print("do some reaction on become change navigation")
-            }
-        }
-        didSet {
-            print("do some reaction on navigation did changed")
-        }
+    @State private var tabBarHeight: CGFloat = 0
+    @State private var selectedTab: BottomNavTab = .dashboard {
+        willSet { print("tab: \(newValue) will be selected") }
+        didSet { print("tab: \(selectedTab) has been selected") }
     }
 
     var body: some View {
-        ZStack(alignment: .top) {
-            appContent
-            navigation
-        }
+        appContent
+                .hideTabViewBar($tabBarHeight)
+                .environment(\.bottomBarHeight, tabBarHeight)
+
     }
 
     private var appContent: some View {
-        TabView(selection: $selectedNavBarTab) {
+        TabView(selection: $selectedTab) {
             dashboard
                     .tag(BottomNavTab.dashboard)
+                    .keepTabViewHeight(in: $tabBarHeight)
 
             contacts
                     .tag(BottomNavTab.contacts)
+                    .keepTabViewHeight(in: $tabBarHeight)
 
             messages
                     .tag(BottomNavTab.messages)
+                    .keepTabViewHeight(in: $tabBarHeight)
 
             events
                     .tag(BottomNavTab.events)
+                    .keepTabViewHeight(in: $tabBarHeight)
 
             settings
                     .tag(BottomNavTab.settings)
+                    .keepTabViewHeight(in: $tabBarHeight)
         }
     }
 
@@ -61,20 +61,19 @@ struct RootContainer: View {
     private var navigation: some View {
         CustomTabView(
                 props: .init(
-                        selectedNavBarTab: selectedNavBarTab,
+                        selectedNavBarTab: selectedTab,
                         items: [.dashboard, .contacts, .events, .messages, .settings],
                         defaultColor: Color(r: 142, g: 142, b: 147, a: 1),
                         accentColor: Color.accentColor,
                         onTap: { item in
                             print("tap on: \(item.label)")
-                            self.selectedNavBarTab = item
+                            self.selectedTab = item
                         },
                         onLongTap: { item in
                             print("longTap on: \(item.label)")
-                            self.selectedNavBarTab = item
+                            self.selectedTab = item
                         }
                 )
         )
     }
-
 }

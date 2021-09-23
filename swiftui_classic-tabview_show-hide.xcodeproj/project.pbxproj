@@ -11,6 +11,7 @@
 		5E8B52BF26FC744400FAEA6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E8B52BE26FC744400FAEA6D /* Assets.xcassets */; };
 		5E8B52C226FC744400FAEA6D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E8B52C126FC744400FAEA6D /* Preview Assets.xcassets */; };
 		ABA7B08F3C15FA6D034B387B /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B8E166341B96BC59FC48 /* CustomTabView.swift */; };
+		ABA7B09356B8A3BFA082D27B /* HideTabViewBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B89AC7C5DE46EFD405A3 /* HideTabViewBarModifier.swift */; };
 		ABA7B190AF8336D16F676FB9 /* EventsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BE0C0BC18B32293D4A10 /* EventsContainer.swift */; };
 		ABA7B30FFD0371833CA7541F /* SettingsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B067299669F266D3BA78 /* SettingsContainer.swift */; };
 		ABA7B3910434CA0CC84DAF51 /* ContactsContainerProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B42809A53F4F6FE5C535 /* ContactsContainerProps.swift */; };
@@ -18,8 +19,10 @@
 		ABA7B44841D73B9000CB540A /* ColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BDAF8354522AB8F9270A /* ColorExt.swift */; };
 		ABA7B58C9CEF0EDB0AA2610A /* EventsContainerProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BECC1DED758343382EAE /* EventsContainerProps.swift */; };
 		ABA7B5FFDE8A9EF51BCD76DA /* SettingsContainerProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BB95E39859CFDB4A0C69 /* SettingsContainerProps.swift */; };
+		ABA7B611E78C8143A5CBBC51 /* Environment+EdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BA9E7CD34B061E05D920 /* Environment+EdgeInsets.swift */; };
 		ABA7B681D865CF3004EF89C2 /* MessagesContainerProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BBCA7E7899FF2A1C108B /* MessagesContainerProps.swift */; };
 		ABA7B6DD36342646B42AB4D4 /* CustomTabViewProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B2109B8EA43BC7849C13 /* CustomTabViewProps.swift */; };
+		ABA7B93A869E39DF4792E163 /* Environment+TabBarHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B29BA1A6C9FBC05D6470 /* Environment+TabBarHeight.swift */; };
 		ABA7B98766DF73E90F8CF759 /* CircleIcconProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BADCC8538F11F113D5DF /* CircleIcconProps.swift */; };
 		ABA7B9A82C853359DA68ACC6 /* ContactsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BAC17FF63283627C3CDA /* ContactsContainer.swift */; };
 		ABA7B9BB9103A428DCAC919E /* MessagesCcontainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B513EBA255EE13440AA4 /* MessagesCcontainer.swift */; };
@@ -39,13 +42,16 @@
 		ABA7B05DF6596D6E25BD585E /* DashboardContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardContainer.swift; sourceTree = "<group>"; };
 		ABA7B067299669F266D3BA78 /* SettingsContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsContainer.swift; sourceTree = "<group>"; };
 		ABA7B2109B8EA43BC7849C13 /* CustomTabViewProps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabViewProps.swift; sourceTree = "<group>"; };
+		ABA7B29BA1A6C9FBC05D6470 /* Environment+TabBarHeight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Environment+TabBarHeight.swift"; sourceTree = "<group>"; };
 		ABA7B4045BCFD774215C3955 /* CircleIccon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleIccon.swift; sourceTree = "<group>"; };
 		ABA7B42809A53F4F6FE5C535 /* ContactsContainerProps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsContainerProps.swift; sourceTree = "<group>"; };
 		ABA7B513EBA255EE13440AA4 /* MessagesCcontainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesCcontainer.swift; sourceTree = "<group>"; };
 		ABA7B5A6772680175B6FEAC7 /* MessagesContainerPrefs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesContainerPrefs.swift; sourceTree = "<group>"; };
 		ABA7B6E8FF94A619AE8A2976 /* RootContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootContainer.swift; sourceTree = "<group>"; };
 		ABA7B720AB65B7C0C4A3F0E1 /* DashboardContainerProps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardContainerProps.swift; sourceTree = "<group>"; };
+		ABA7B89AC7C5DE46EFD405A3 /* HideTabViewBarModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HideTabViewBarModifier.swift; sourceTree = "<group>"; };
 		ABA7B8E166341B96BC59FC48 /* CustomTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
+		ABA7BA9E7CD34B061E05D920 /* Environment+EdgeInsets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Environment+EdgeInsets.swift"; sourceTree = "<group>"; };
 		ABA7BAC17FF63283627C3CDA /* ContactsContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsContainer.swift; sourceTree = "<group>"; };
 		ABA7BADCC8538F11F113D5DF /* CircleIcconProps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleIcconProps.swift; sourceTree = "<group>"; };
 		ABA7BB388FAAB7B11DE04EA3 /* BottomNavTab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomNavTab.swift; sourceTree = "<group>"; };
@@ -138,6 +144,15 @@
 			path = CircleIccon;
 			sourceTree = "<group>";
 		};
+		ABA7B5D994A6B047E7023475 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				ABA7BA9E7CD34B061E05D920 /* Environment+EdgeInsets.swift */,
+				ABA7B29BA1A6C9FBC05D6470 /* Environment+TabBarHeight.swift */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
 		ABA7B63E458149E4BC503D65 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +169,7 @@
 				ABA7BBB34594B4E8BBE8EABC /* Pages */,
 				ABA7B63E458149E4BC503D65 /* Utils */,
 				ABA7B1D9469952A6C90DE6B5 /* Components */,
+				ABA7B5D994A6B047E7023475 /* Environment */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -163,6 +179,7 @@
 			children = (
 				ABA7BAECB913CF9B72FF5AA2 /* Models */,
 				ABA7BA213DFF628515842267 /* CustomTabView */,
+				ABA7B89AC7C5DE46EFD405A3 /* HideTabViewBarModifier.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -312,6 +329,9 @@
 				ABA7B44841D73B9000CB540A /* ColorExt.swift in Sources */,
 				ABA7BBE316B80F85B75E5E5D /* CircleIccon.swift in Sources */,
 				ABA7B98766DF73E90F8CF759 /* CircleIcconProps.swift in Sources */,
+				ABA7B09356B8A3BFA082D27B /* HideTabViewBarModifier.swift in Sources */,
+				ABA7B611E78C8143A5CBBC51 /* Environment+EdgeInsets.swift in Sources */,
+				ABA7B93A869E39DF4792E163 /* Environment+TabBarHeight.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -5,18 +5,9 @@ struct EventsContainer: View {
 
     var body: some View {
         NavigationView {
-            pageContent()
+            EventsView(props: .init())
                     .navigationTitle("Events")
-        }
-    }
-
-    @ViewBuilder
-    private func pageContent() -> some View {
-        VStack {
-            Text("Events container")
-            NavigationLink(destination: Text("Details")) {
-                Text("Details")
-            }
+                    .bottomNav(enabled: .constant(true))
         }
     }
 }

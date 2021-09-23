@@ -5,18 +5,9 @@ struct SettingsContainer: View {
 
     var body: some View {
         NavigationView {
-            pageContent()
+            SettingsView(props: .init())
                     .navigationTitle("Settings")
-        }
-    }
-
-    @ViewBuilder
-    private func pageContent() -> some View {
-        VStack {
-            Text("Settings container")
-            NavigationLink(destination: Text("Details")) {
-                Text("Details")
-            }
+                    .bottomNav(enabled: .constant(true))
         }
     }
 }

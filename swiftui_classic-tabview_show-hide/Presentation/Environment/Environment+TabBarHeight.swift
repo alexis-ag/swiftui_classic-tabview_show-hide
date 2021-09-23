@@ -1,9 +1,5 @@
 import SwiftUI
 
-struct BottomBarHeightEnvironmentKey: EnvironmentKey {
-    static var defaultValue: CGFloat = 0
-}
-
 extension EnvironmentValues {
     ///TabView height; includes bottom safe area.
     var bottomBarHeight: CGFloat {
@@ -12,6 +8,9 @@ extension EnvironmentValues {
     }
 }
 
+struct BottomBarHeightEnvironmentKey: EnvironmentKey {
+    static var defaultValue: CGFloat = 0
+}
 struct TabBarHeightEnvironmentKey: EnvironmentKey {
     static var defaultValue: CGFloat = 0
 }

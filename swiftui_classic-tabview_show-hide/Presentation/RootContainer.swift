@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct RootContainer: View {
+    @EnvironmentObject private var navState: NavigationViewState
+
     @State private var tabBarHeight: CGFloat = 0
     @State private var selectedTab: BottomNavTab = .dashboard {
         willSet { print("tab: \(newValue) will be selected") }
@@ -11,11 +13,10 @@ struct RootContainer: View {
         appContent
                 .hideTabViewBar($tabBarHeight)
                 .environment(\.bottomBarHeight, tabBarHeight)
-
     }
 
     private var appContent: some View {
-        TabView(selection: $selectedTab) {
+        TabView(selection: $navState.bottomNavSelectedTab) {
             dashboard
                     .tag(BottomNavTab.dashboard)
                     .keepTabViewHeight(in: $tabBarHeight)
@@ -56,24 +57,5 @@ struct RootContainer: View {
 
     private var settings: some  View {
         SettingsContainer(props: .init())
-    }
-
-    private var navigation: some View {
-        CustomTabView(
-                props: .init(
-                        selectedNavBarTab: selectedTab,
-                        items: [.dashboard, .contacts, .events, .messages, .settings],
-                        defaultColor: Color(r: 142, g: 142, b: 147, a: 1),
-                        accentColor: Color.accentColor,
-                        onTap: { item in
-                            print("tap on: \(item.label)")
-                            self.selectedTab = item
-                        },
-                        onLongTap: { item in
-                            print("longTap on: \(item.label)")
-                            self.selectedTab = item
-                        }
-                )
-        )
     }
 }

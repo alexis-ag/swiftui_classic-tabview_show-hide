@@ -2,105 +2,97 @@ import SwiftUI
 
 struct CustomTabView: View {
     let props: Props
+    @Environment(\.safeAreaEdgeInsets) private var safeAreaEdgeInsets
 
     var body: some View {
         VStack(spacing: 0) {
-            Spacer()
+            Divider()
+                    .padding(.bottom, Style.topDividerPadding)
+
             HStack(alignment: .bottom, spacing: 0) {
                 ForEach(props.items) { item in
                     navItem(item: item, props: props)
                 }
             }
         }
+                .padding(.bottom, safeAreaEdgeInsets.bottom)
+                .background(Style.bgColor)
     }
 
 
     @ViewBuilder
-    private func navItem(item: BottomNavTab, props: Props) -> some View {
-        let isSelected = item == props.selectedNavBarTab
+    private func navItem(item: BottomNavTabItem, props: Props) -> some View {
+        let isSelected = item.type == props.selectedNavBarTab
 
         HStack(alignment: .bottom, spacing: 0) {
             Spacer()
             HStack(alignment: .bottom) {
                 VStack(alignment: .center, spacing: 0) {
-                    navigationItemIcon(item: item, props: props)
-                    Text(item.label)
-                            .font(Font.system(size: 10))
+                    navIcon(
+                            imgName: item.type.icon(isSelected: isSelected),
+                            size: Style.Icon.size,
+                            notificationsCount: item.notificationsCount,
+                            fgColor: isSelected ? Style.Icon.accentColor : Style.Icon.color
+                    )
+                    Text(item.type.label)
+                            .font(Style.Label.font)
                             .fixedSize(horizontal: true, vertical: true)
-                            .foregroundColor(isSelected ? props.accentColor : props.defaultColor)
-                            .padding(.bottom, 1)
-                            .padding(.top, 3)
+                            .foregroundColor(isSelected ? Style.Label.accentColor : Style.Label.color)
+                            .padding(.bottom, Style.Label.paddingBottom)
+                            .padding(.top, Style.Label.paddingTop)
                 }
             }
             Spacer()
         }
                 .contentShape(Rectangle())
-                .onTapGesture(perform: { props.onTap(item) })
-                .onLongPressGesture(perform: { props.onLongTap(item) })
+                .onTapGesture(perform: { props.onTap(item.type) })
+                .onLongPressGesture(perform: { props.onLongTap(item.type) })
     }
 
+
     @ViewBuilder
-    private func navigationItemIcon(item: BottomNavTab, props: Props) -> some View {
-        let imgSize: CGFloat = 28
-        let isSelected = item == props.selectedNavBarTab
-        switch item {
-        case .dashboard:
+    private func navIcon(
+            imgName: String,
+            size: CGFloat,
+            notificationsCount: Int,
+            bgColor: Color = Color.clear,
+            fgColor: Color = Color.accentColor
+    ) -> some View {
+        let title = notificationsCount > 999 ? "\(notificationsCount / 1000)k+" : "\(notificationsCount)"
+        let isOneSymbol = notificationsCount < 10
+        ZStack(alignment: .top) {
             CircleIcon(
                     props: .init(
-                            size: imgSize,
+                            size: size,
                             style: .systemImage(
-                                    systemImageName:  isSelected ? "pianokeys.inverse" : "pianokeys",
-                                    font: .title,
-                                    backgroundColor: .clear,
-                                    foregroundColor: isSelected ? props.accentColor : props.defaultColor)
+                                    systemImageName:  imgName,
+                                    font: Style.Icon.font,
+                                    backgroundColor: bgColor,
+                                    foregroundColor: fgColor
+                            )
                     )
             )
-
-        case .contacts:
-            CircleIcon(
-                    props: .init(
-                            size: imgSize,
-                            style: .systemImage(
-                                    systemImageName:  isSelected ? "person.2.circle.fill" : "person",
-                                    font: .title,
-                                    backgroundColor: .clear,
-                                    foregroundColor: isSelected ? props.accentColor : props.defaultColor)
-                    )
-            )
-
-        case .messages:
-            CircleIcon(
-                    props: .init(
-                            size: imgSize,
-                            style: .systemImage(
-                                    systemImageName:  isSelected ? "person.3.fill" : "person.3",
-                                    font: .title,
-                                    backgroundColor: .clear,
-                                    foregroundColor: isSelected ? props.accentColor : props.defaultColor)
-                    )
-            )
-        case .events:
-            CircleIcon(
-                    props: .init(
-                            size: imgSize,
-                            style: .systemImage(
-                                    systemImageName:  isSelected ? "location.circle.fill" : "location.circle",
-                                    font: .title,
-                                    backgroundColor: .clear,
-                                    foregroundColor: isSelected ? props.accentColor : props.defaultColor)
-                    )
-            )
-        case .settings:
-            CircleIcon(
-                    props: .init(
-                            size: imgSize,
-                            style: .systemImage(
-                                    systemImageName:  isSelected ? "gearshape.2.fill" : "gearshape.2",
-                                    font: .title,
-                                    backgroundColor: .clear,
-                                    foregroundColor: isSelected ? props.accentColor : props.defaultColor)
-                    )
-            )
+            if notificationsCount <= 0 {
+                EmptyView()
+            } else if isOneSymbol {
+                Text(title)
+                        .font(Style.Badge.font)
+                        .foregroundColor(Style.Badge.fgColor)
+                        .padding(.horizontal, Style.Badge.paddingHorizontal)
+                        .background(Style.Badge.bgColor)
+                        .clipShape(Circle())
+                        .offset(Style.Badge.offset)
+                        .transition(.opacity)
+            } else {
+                Text(title)
+                        .font(Style.Badge.font)
+                        .foregroundColor(.white)
+                        .padding(.horizontal, Style.Badge.paddingHorizontal)
+                        .background(Color.red)
+                        .clipShape(Capsule())
+                        .offset(Style.Badge.offset)
+                        .transition(.opacity)
+            }
         }
     }
 }

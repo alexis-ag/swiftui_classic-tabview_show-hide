@@ -37,4 +37,18 @@ enum BottomNavTab: Identifiable {
         }
     }
 
+    func icon(isSelected: Bool) -> String {
+        switch self {
+        case .dashboard:
+            return isSelected ? "pianokeys.inverse" : "pianokeys"
+        case .contacts:
+            return isSelected ? "person.2.circle.fill" : "person"
+        case .events:
+            return isSelected ? "location.circle.fill" : "location.circle"
+        case .messages:
+            return isSelected ? "person.3.fill" : "person.3"
+        case .settings:
+            return isSelected ? "gearshape.2.fill" : "gearshape.2"
+        }
+    }
 }

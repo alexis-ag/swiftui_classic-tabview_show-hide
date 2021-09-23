@@ -12,25 +12,43 @@
 		5E8B52C226FC744400FAEA6D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E8B52C126FC744400FAEA6D /* Preview Assets.xcassets */; };
 		ABA7B08F3C15FA6D034B387B /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B8E166341B96BC59FC48 /* CustomTabView.swift */; };
 		ABA7B09356B8A3BFA082D27B /* HideTabViewBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B89AC7C5DE46EFD405A3 /* HideTabViewBarModifier.swift */; };
+		ABA7B0B01F3F1AA0B745CE60 /* Environment+UIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BD768CD76494810A3A52 /* Environment+UIScreen.swift */; };
+		ABA7B0DB36B8467AF2A1C6A4 /* NavigationViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BA6713F0C7113DEF1122 /* NavigationViewState.swift */; };
+		ABA7B116BC4C21F1F89A8437 /* CustomTabViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B5BC1C8F2978477C034E /* CustomTabViewStyle.swift */; };
+		ABA7B1881CF8CC59815CC673 /* BoolExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B2C5A6B168627A07298F /* BoolExt.swift */; };
 		ABA7B190AF8336D16F676FB9 /* EventsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BE0C0BC18B32293D4A10 /* EventsContainer.swift */; };
+		ABA7B1AE81C0468164D66E49 /* ContactsViewProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B6ED1739CB4BAD1CD5BC /* ContactsViewProps.swift */; };
 		ABA7B30FFD0371833CA7541F /* SettingsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B067299669F266D3BA78 /* SettingsContainer.swift */; };
 		ABA7B3910434CA0CC84DAF51 /* ContactsContainerProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B42809A53F4F6FE5C535 /* ContactsContainerProps.swift */; };
+		ABA7B3B51AF650946B334308 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B503699195A7F2DBEBBA /* DashboardView.swift */; };
 		ABA7B3D06C36995FD4F49515 /* RootContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B6E8FF94A619AE8A2976 /* RootContainer.swift */; };
 		ABA7B44841D73B9000CB540A /* ColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BDAF8354522AB8F9270A /* ColorExt.swift */; };
+		ABA7B4FC4198B914C39E044B /* MessagesViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BB85636AAD5956F4627B /* MessagesViewStyle.swift */; };
 		ABA7B58C9CEF0EDB0AA2610A /* EventsContainerProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BECC1DED758343382EAE /* EventsContainerProps.swift */; };
 		ABA7B5FFDE8A9EF51BCD76DA /* SettingsContainerProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BB95E39859CFDB4A0C69 /* SettingsContainerProps.swift */; };
 		ABA7B611E78C8143A5CBBC51 /* Environment+EdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BA9E7CD34B061E05D920 /* Environment+EdgeInsets.swift */; };
 		ABA7B681D865CF3004EF89C2 /* MessagesContainerProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BBCA7E7899FF2A1C108B /* MessagesContainerProps.swift */; };
+		ABA7B6D8CC938CD84036D80E /* BottomNavContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B29D1FC5C8252485129E /* BottomNavContainer.swift */; };
 		ABA7B6DD36342646B42AB4D4 /* CustomTabViewProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B2109B8EA43BC7849C13 /* CustomTabViewProps.swift */; };
+		ABA7B74A8E56854495C93552 /* EventsViewProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B1F583E40C79E8AD31EC /* EventsViewProps.swift */; };
+		ABA7B8862B40675C2297C07C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BE26F90EBB18CEFADA77 /* SettingsView.swift */; };
+		ABA7B8B37982180D03D6F533 /* BottomNavTabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BF607D25375E3CBE5DD7 /* BottomNavTabItem.swift */; };
 		ABA7B93A869E39DF4792E163 /* Environment+TabBarHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B29BA1A6C9FBC05D6470 /* Environment+TabBarHeight.swift */; };
 		ABA7B98766DF73E90F8CF759 /* CircleIcconProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BADCC8538F11F113D5DF /* CircleIcconProps.swift */; };
 		ABA7B9A82C853359DA68ACC6 /* ContactsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BAC17FF63283627C3CDA /* ContactsContainer.swift */; };
 		ABA7B9BB9103A428DCAC919E /* MessagesCcontainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B513EBA255EE13440AA4 /* MessagesCcontainer.swift */; };
 		ABA7BB42F02246C582FC45BA /* DashboardContainerProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B720AB65B7C0C4A3F0E1 /* DashboardContainerProps.swift */; };
+		ABA7BB82EA056013A2476E82 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B300FF2968E493FCAC4F /* MessagesView.swift */; };
 		ABA7BBE316B80F85B75E5E5D /* CircleIccon.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B4045BCFD774215C3955 /* CircleIccon.swift */; };
-		ABA7BCC9F11D5C3C796F224A /* MessagesContainerPrefs.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B5A6772680175B6FEAC7 /* MessagesContainerPrefs.swift */; };
+		ABA7BC5E294EE55502C88C64 /* EventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BAC292B1E131E60A5587 /* EventsView.swift */; };
 		ABA7BD120781A2721DC3C37E /* BottomNavTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BB388FAAB7B11DE04EA3 /* BottomNavTab.swift */; };
 		ABA7BD24F3EB37D1D70D3D6B /* DashboardContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B05DF6596D6E25BD585E /* DashboardContainer.swift */; };
+		ABA7BDA2CBAB243D05C584D2 /* KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B70AB90875AE814686DD /* KeyboardObserver.swift */; };
+		ABA7BE800582F626C0E3CC11 /* SettingsViewProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B883769A0F9F611780AF /* SettingsViewProps.swift */; };
+		ABA7BF091C27FA9AE90FCCEB /* BottomNavModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BBDDC3AA1C318266BDF0 /* BottomNavModifier.swift */; };
+		ABA7BF50F79997E205DC88F3 /* DashboardViewProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BB75EC56E66879DEA454 /* DashboardViewProps.swift */; };
+		ABA7BFA5982355EC890A707A /* MessagesViewProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BAAAC8DA80C83D82F8E5 /* MessagesViewProps.swift */; };
+		ABA7BFEA95C3754F03E85EFE /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BD8963D259D505788193 /* ContactsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,25 +59,43 @@
 		5E8B52C326FC744400FAEA6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABA7B05DF6596D6E25BD585E /* DashboardContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardContainer.swift; sourceTree = "<group>"; };
 		ABA7B067299669F266D3BA78 /* SettingsContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsContainer.swift; sourceTree = "<group>"; };
+		ABA7B1F583E40C79E8AD31EC /* EventsViewProps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewProps.swift; sourceTree = "<group>"; };
 		ABA7B2109B8EA43BC7849C13 /* CustomTabViewProps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabViewProps.swift; sourceTree = "<group>"; };
 		ABA7B29BA1A6C9FBC05D6470 /* Environment+TabBarHeight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Environment+TabBarHeight.swift"; sourceTree = "<group>"; };
+		ABA7B29D1FC5C8252485129E /* BottomNavContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomNavContainer.swift; sourceTree = "<group>"; };
+		ABA7B2C5A6B168627A07298F /* BoolExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoolExt.swift; sourceTree = "<group>"; };
+		ABA7B300FF2968E493FCAC4F /* MessagesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
 		ABA7B4045BCFD774215C3955 /* CircleIccon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleIccon.swift; sourceTree = "<group>"; };
 		ABA7B42809A53F4F6FE5C535 /* ContactsContainerProps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsContainerProps.swift; sourceTree = "<group>"; };
+		ABA7B503699195A7F2DBEBBA /* DashboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		ABA7B513EBA255EE13440AA4 /* MessagesCcontainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesCcontainer.swift; sourceTree = "<group>"; };
-		ABA7B5A6772680175B6FEAC7 /* MessagesContainerPrefs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesContainerPrefs.swift; sourceTree = "<group>"; };
+		ABA7B5BC1C8F2978477C034E /* CustomTabViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabViewStyle.swift; sourceTree = "<group>"; };
 		ABA7B6E8FF94A619AE8A2976 /* RootContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootContainer.swift; sourceTree = "<group>"; };
+		ABA7B6ED1739CB4BAD1CD5BC /* ContactsViewProps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsViewProps.swift; sourceTree = "<group>"; };
+		ABA7B70AB90875AE814686DD /* KeyboardObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardObserver.swift; sourceTree = "<group>"; };
 		ABA7B720AB65B7C0C4A3F0E1 /* DashboardContainerProps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardContainerProps.swift; sourceTree = "<group>"; };
+		ABA7B883769A0F9F611780AF /* SettingsViewProps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewProps.swift; sourceTree = "<group>"; };
 		ABA7B89AC7C5DE46EFD405A3 /* HideTabViewBarModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HideTabViewBarModifier.swift; sourceTree = "<group>"; };
 		ABA7B8E166341B96BC59FC48 /* CustomTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
+		ABA7BA6713F0C7113DEF1122 /* NavigationViewState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewState.swift; sourceTree = "<group>"; };
 		ABA7BA9E7CD34B061E05D920 /* Environment+EdgeInsets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Environment+EdgeInsets.swift"; sourceTree = "<group>"; };
+		ABA7BAAAC8DA80C83D82F8E5 /* MessagesViewProps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewProps.swift; sourceTree = "<group>"; };
 		ABA7BAC17FF63283627C3CDA /* ContactsContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsContainer.swift; sourceTree = "<group>"; };
+		ABA7BAC292B1E131E60A5587 /* EventsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsView.swift; sourceTree = "<group>"; };
 		ABA7BADCC8538F11F113D5DF /* CircleIcconProps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleIcconProps.swift; sourceTree = "<group>"; };
 		ABA7BB388FAAB7B11DE04EA3 /* BottomNavTab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomNavTab.swift; sourceTree = "<group>"; };
+		ABA7BB75EC56E66879DEA454 /* DashboardViewProps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewProps.swift; sourceTree = "<group>"; };
+		ABA7BB85636AAD5956F4627B /* MessagesViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewStyle.swift; sourceTree = "<group>"; };
 		ABA7BB95E39859CFDB4A0C69 /* SettingsContainerProps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsContainerProps.swift; sourceTree = "<group>"; };
 		ABA7BBCA7E7899FF2A1C108B /* MessagesContainerProps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesContainerProps.swift; sourceTree = "<group>"; };
+		ABA7BBDDC3AA1C318266BDF0 /* BottomNavModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomNavModifier.swift; sourceTree = "<group>"; };
+		ABA7BD768CD76494810A3A52 /* Environment+UIScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Environment+UIScreen.swift"; sourceTree = "<group>"; };
+		ABA7BD8963D259D505788193 /* ContactsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
 		ABA7BDAF8354522AB8F9270A /* ColorExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExt.swift; sourceTree = "<group>"; };
 		ABA7BE0C0BC18B32293D4A10 /* EventsContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsContainer.swift; sourceTree = "<group>"; };
+		ABA7BE26F90EBB18CEFADA77 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		ABA7BECC1DED758343382EAE /* EventsContainerProps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsContainerProps.swift; sourceTree = "<group>"; };
+		ABA7BF607D25375E3CBE5DD7 /* BottomNavTabItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomNavTabItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +133,7 @@
 				5E8B52C326FC744400FAEA6D /* Info.plist */,
 				5E8B52C026FC744400FAEA6D /* Preview Content */,
 				ABA7B8550B797289C857436E /* Presentation */,
+				ABA7BC3F99E56FE284248FA5 /* Utils */,
 			);
 			path = "swiftui_classic-tabview_show-hide";
 			sourceTree = "<group>";
@@ -117,11 +154,21 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		ABA7B325E17998E97090D960 /* DashboardView */ = {
+			isa = PBXGroup;
+			children = (
+				ABA7B503699195A7F2DBEBBA /* DashboardView.swift */,
+				ABA7BB75EC56E66879DEA454 /* DashboardViewProps.swift */,
+			);
+			path = DashboardView;
+			sourceTree = "<group>";
+		};
 		ABA7B3CBA228C4BDBDA1F466 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
 				ABA7B05DF6596D6E25BD585E /* DashboardContainer.swift */,
 				ABA7B720AB65B7C0C4A3F0E1 /* DashboardContainerProps.swift */,
+				ABA7B325E17998E97090D960 /* DashboardView */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -131,6 +178,7 @@
 			children = (
 				ABA7BE0C0BC18B32293D4A10 /* EventsContainer.swift */,
 				ABA7BECC1DED758343382EAE /* EventsContainerProps.swift */,
+				ABA7B65F3535E704ED32B6EE /* EventsView */,
 			);
 			path = Events;
 			sourceTree = "<group>";
@@ -149,6 +197,7 @@
 			children = (
 				ABA7BA9E7CD34B061E05D920 /* Environment+EdgeInsets.swift */,
 				ABA7B29BA1A6C9FBC05D6470 /* Environment+TabBarHeight.swift */,
+				ABA7BD768CD76494810A3A52 /* Environment+UIScreen.swift */,
 			);
 			path = Environment;
 			sourceTree = "<group>";
@@ -157,8 +206,28 @@
 			isa = PBXGroup;
 			children = (
 				ABA7BDAF8354522AB8F9270A /* ColorExt.swift */,
+				ABA7B70AB90875AE814686DD /* KeyboardObserver.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		ABA7B65F3535E704ED32B6EE /* EventsView */ = {
+			isa = PBXGroup;
+			children = (
+				ABA7BAC292B1E131E60A5587 /* EventsView.swift */,
+				ABA7B1F583E40C79E8AD31EC /* EventsViewProps.swift */,
+			);
+			path = EventsView;
+			sourceTree = "<group>";
+		};
+		ABA7B66DEBF0BF2B5C713941 /* MessagesView */ = {
+			isa = PBXGroup;
+			children = (
+				ABA7B300FF2968E493FCAC4F /* MessagesView.swift */,
+				ABA7BAAAC8DA80C83D82F8E5 /* MessagesViewProps.swift */,
+				ABA7BB85636AAD5956F4627B /* MessagesViewStyle.swift */,
+			);
+			path = MessagesView;
 			sourceTree = "<group>";
 		};
 		ABA7B8550B797289C857436E /* Presentation */ = {
@@ -180,6 +249,9 @@
 				ABA7BAECB913CF9B72FF5AA2 /* Models */,
 				ABA7BA213DFF628515842267 /* CustomTabView */,
 				ABA7B89AC7C5DE46EFD405A3 /* HideTabViewBarModifier.swift */,
+				ABA7BBDDC3AA1C318266BDF0 /* BottomNavModifier.swift */,
+				ABA7B29D1FC5C8252485129E /* BottomNavContainer.swift */,
+				ABA7BA6713F0C7113DEF1122 /* NavigationViewState.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -189,6 +261,7 @@
 			children = (
 				ABA7B8E166341B96BC59FC48 /* CustomTabView.swift */,
 				ABA7B2109B8EA43BC7849C13 /* CustomTabViewProps.swift */,
+				ABA7B5BC1C8F2978477C034E /* CustomTabViewStyle.swift */,
 			);
 			path = CustomTabView;
 			sourceTree = "<group>";
@@ -197,8 +270,26 @@
 			isa = PBXGroup;
 			children = (
 				ABA7BB388FAAB7B11DE04EA3 /* BottomNavTab.swift */,
+				ABA7BF607D25375E3CBE5DD7 /* BottomNavTabItem.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		ABA7BB0B8EAE956D1F89A665 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ABA7B2C5A6B168627A07298F /* BoolExt.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ABA7BB91C0F74F4686EF9822 /* ContactsView */ = {
+			isa = PBXGroup;
+			children = (
+				ABA7BD8963D259D505788193 /* ContactsView.swift */,
+				ABA7B6ED1739CB4BAD1CD5BC /* ContactsViewProps.swift */,
+			);
+			path = ContactsView;
 			sourceTree = "<group>";
 		};
 		ABA7BBB34594B4E8BBE8EABC /* Pages */ = {
@@ -213,11 +304,20 @@
 			path = Pages;
 			sourceTree = "<group>";
 		};
+		ABA7BC3F99E56FE284248FA5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				ABA7BB0B8EAE956D1F89A665 /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		ABA7BD480856B8DC1EFEB362 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
 				ABA7B067299669F266D3BA78 /* SettingsContainer.swift */,
 				ABA7BB95E39859CFDB4A0C69 /* SettingsContainerProps.swift */,
+				ABA7BE1DAE3E38A4ABE08288 /* SettingsView */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -227,9 +327,18 @@
 			children = (
 				ABA7B513EBA255EE13440AA4 /* MessagesCcontainer.swift */,
 				ABA7BBCA7E7899FF2A1C108B /* MessagesContainerProps.swift */,
-				ABA7B5A6772680175B6FEAC7 /* MessagesContainerPrefs.swift */,
+				ABA7B66DEBF0BF2B5C713941 /* MessagesView */,
 			);
 			path = Messages;
+			sourceTree = "<group>";
+		};
+		ABA7BE1DAE3E38A4ABE08288 /* SettingsView */ = {
+			isa = PBXGroup;
+			children = (
+				ABA7BE26F90EBB18CEFADA77 /* SettingsView.swift */,
+				ABA7B883769A0F9F611780AF /* SettingsViewProps.swift */,
+			);
+			path = SettingsView;
 			sourceTree = "<group>";
 		};
 		ABA7BFD97F93656DBD07C2B4 /* Contacts */ = {
@@ -237,6 +346,7 @@
 			children = (
 				ABA7BAC17FF63283627C3CDA /* ContactsContainer.swift */,
 				ABA7B42809A53F4F6FE5C535 /* ContactsContainerProps.swift */,
+				ABA7BB91C0F74F4686EF9822 /* ContactsView */,
 			);
 			path = Contacts;
 			sourceTree = "<group>";
@@ -323,7 +433,6 @@
 				ABA7B58C9CEF0EDB0AA2610A /* EventsContainerProps.swift in Sources */,
 				ABA7B681D865CF3004EF89C2 /* MessagesContainerProps.swift in Sources */,
 				ABA7B5FFDE8A9EF51BCD76DA /* SettingsContainerProps.swift in Sources */,
-				ABA7BCC9F11D5C3C796F224A /* MessagesContainerPrefs.swift in Sources */,
 				ABA7B08F3C15FA6D034B387B /* CustomTabView.swift in Sources */,
 				ABA7B6DD36342646B42AB4D4 /* CustomTabViewProps.swift in Sources */,
 				ABA7B44841D73B9000CB540A /* ColorExt.swift in Sources */,
@@ -332,6 +441,25 @@
 				ABA7B09356B8A3BFA082D27B /* HideTabViewBarModifier.swift in Sources */,
 				ABA7B611E78C8143A5CBBC51 /* Environment+EdgeInsets.swift in Sources */,
 				ABA7B93A869E39DF4792E163 /* Environment+TabBarHeight.swift in Sources */,
+				ABA7BF091C27FA9AE90FCCEB /* BottomNavModifier.swift in Sources */,
+				ABA7BDA2CBAB243D05C584D2 /* KeyboardObserver.swift in Sources */,
+				ABA7B0B01F3F1AA0B745CE60 /* Environment+UIScreen.swift in Sources */,
+				ABA7B6D8CC938CD84036D80E /* BottomNavContainer.swift in Sources */,
+				ABA7B8B37982180D03D6F533 /* BottomNavTabItem.swift in Sources */,
+				ABA7B0DB36B8467AF2A1C6A4 /* NavigationViewState.swift in Sources */,
+				ABA7B1881CF8CC59815CC673 /* BoolExt.swift in Sources */,
+				ABA7B116BC4C21F1F89A8437 /* CustomTabViewStyle.swift in Sources */,
+				ABA7BFEA95C3754F03E85EFE /* ContactsView.swift in Sources */,
+				ABA7B1AE81C0468164D66E49 /* ContactsViewProps.swift in Sources */,
+				ABA7B3B51AF650946B334308 /* DashboardView.swift in Sources */,
+				ABA7BF50F79997E205DC88F3 /* DashboardViewProps.swift in Sources */,
+				ABA7BC5E294EE55502C88C64 /* EventsView.swift in Sources */,
+				ABA7B74A8E56854495C93552 /* EventsViewProps.swift in Sources */,
+				ABA7B8862B40675C2297C07C /* SettingsView.swift in Sources */,
+				ABA7BE800582F626C0E3CC11 /* SettingsViewProps.swift in Sources */,
+				ABA7BB82EA056013A2476E82 /* MessagesView.swift in Sources */,
+				ABA7BFA5982355EC890A707A /* MessagesViewProps.swift in Sources */,
+				ABA7B4FC4198B914C39E044B /* MessagesViewStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,18 +6,11 @@ struct DashboardContainer: View {
 
     var body: some View {
         NavigationView {
-            pageContent()
+            DashboardView(props: .init())
                     .navigationTitle("Dashboard")
         }
-    }
-
-    @ViewBuilder
-    private func pageContent() -> some View {
-        VStack {
-            Text("Dashboard container")
-            NavigationLink(destination: Text("Details")) {
-                Text("Details")
-            }
-        }
+            //note! if you put this modifier on NavView
+            //it applies menu to the all nav hierarchy
+            .bottomNav(enabled: .constant(true))
     }
 }

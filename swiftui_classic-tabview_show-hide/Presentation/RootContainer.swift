@@ -11,8 +11,8 @@ struct RootContainer: View {
 
     var body: some View {
         appContent
-                .hideTabViewBar($tabBarHeight)
-                .environment(\.bottomBarHeight, tabBarHeight)
+                .hideTabViewBar
+                .environment(\.tabBarHeight, tabBarHeight)
     }
 
     private var appContent: some View {

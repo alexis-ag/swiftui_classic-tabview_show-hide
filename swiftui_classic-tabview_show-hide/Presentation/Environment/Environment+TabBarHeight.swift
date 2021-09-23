@@ -1,27 +1,18 @@
 import SwiftUI
 
 extension EnvironmentValues {
-    ///TabView height; includes bottom safe area.
-    var bottomBarHeight: CGFloat {
-        get { self[BottomBarHeightEnvironmentKey.self] }
-        set { self[BottomBarHeightEnvironmentKey.self] = newValue }
-    }
-}
-
-struct BottomBarHeightEnvironmentKey: EnvironmentKey {
-    static var defaultValue: CGFloat = 0
-}
-struct TabBarHeightEnvironmentKey: EnvironmentKey {
-    static var defaultValue: CGFloat = 0
-}
-
-extension EnvironmentValues {
     ///TabView raw height; does not include bottom safe area.
     var tabBarHeight: CGFloat {
         get { self[TabBarHeightEnvironmentKey.self] }
         set { self[TabBarHeightEnvironmentKey.self] = newValue }
     }
 }
+
+struct TabBarHeightEnvironmentKey: EnvironmentKey {
+    static var defaultValue: CGFloat = 0
+}
+
+
 
 extension View {
     /// Read TabView height from underlying  UITabBarController  and keep it in property passed by binding.

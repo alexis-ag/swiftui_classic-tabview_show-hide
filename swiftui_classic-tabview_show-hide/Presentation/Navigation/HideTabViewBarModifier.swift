@@ -1,14 +1,14 @@
 import SwiftUI
 
 extension View {
-    func hideTabViewBar(_ tabBarHeight: Binding<CGFloat>) -> some View {
-        modifier(HideTabViewBarModifier(tabBarHeight: tabBarHeight))
+    var hideTabViewBar: some View {
+        modifier(HideTabViewBarModifier())
     }
 }
 
 struct HideTabViewBarModifier: ViewModifier {
-    @Binding var tabBarHeight: CGFloat
     @Environment(\.safeAreaEdgeInsets) private var safeAreaEdgeInsets
+    @Environment(\.tabBarHeight) private var tabBarHeight
 
     func body(content: Content) -> some View {
         content

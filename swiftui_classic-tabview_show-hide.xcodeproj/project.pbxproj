@@ -597,6 +597,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "-allowProvisioningUpdates";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.kaller.swiftui-classic-tabview-show-hide";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -619,6 +620,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "-allowProvisioningUpdates";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.kaller.swiftui-classic-tabview-show-hide";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
